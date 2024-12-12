@@ -1,4 +1,4 @@
-package menu.model.vo.coach_name;
+package menu.model.coach.vo.coach_name;
 
 public class CoachName {
 
@@ -22,6 +22,10 @@ public class CoachName {
         if (value.length() > COACH_NAME_LENGTH_MAX) {
             throw CoachNameException.tooLong();
         }
+    }
+
+    public String getValue() {
+        return value;
     }
 
     @Override

@@ -1,7 +1,7 @@
-package menu.model.vo.coach_name;
+package menu.model.coach.vo.coach_name;
 
-import static menu.model.vo.coach_name.CoachName.COACH_NAME_LENGTH_MAX;
-import static menu.model.vo.coach_name.CoachName.COACH_NAME_LENGTH_MIN;
+import static menu.model.coach.vo.coach_name.CoachName.COACH_NAME_LENGTH_MAX;
+import static menu.model.coach.vo.coach_name.CoachName.COACH_NAME_LENGTH_MIN;
 
 import menu.exception.CustomException;
 

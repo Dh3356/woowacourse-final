@@ -5,4 +5,6 @@ import java.util.List;
 public interface InputView {
 
     List<String> inputCoachNames();
+
+    List<String> inputUnableMenus(final String coachName);
 }
