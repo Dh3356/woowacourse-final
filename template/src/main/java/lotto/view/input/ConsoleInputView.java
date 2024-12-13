@@ -36,7 +36,7 @@ public class ConsoleInputView implements InputView {
         if (value.startsWith(delimiter) || value.endsWith(delimiter)) { // 구분자로 시작하거나 끝나는지
             throw InvalidInputException.invalidInput("올바르지 않은 입력입니다.");
         }
-        if (value.contains(delimiter.repeat(2))) {
+        if (value.contains(delimiter.repeat(2))) { // 구분자가 연속 두 번 나오는지
             throw InvalidInputException.invalidInput("올바르지 않은 입력입니다.");
         }
     }

@@ -8,8 +8,6 @@ import lotto.view.output.OutputView;
 
 public class Application {
 
-    private static final String ERROR_FORM = "[ERROR] %s\n\n";
-
     public static void main(String[] args) {
         InputView consoleInputView = new ConsoleInputView();
         OutputView consoleOutputView = new ConsoleOutputView();
@@ -20,7 +18,5 @@ public class Application {
         );
 
         controller.run();
-        System.out.printf(ERROR_FORM, "hello");
-        System.out.print("---");
     }
 }
