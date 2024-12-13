@@ -6,5 +6,5 @@ public interface InputView {
 
     List<String> inputCoachNames();
 
-    List<String> inputUnableMenus(final String coachName);
+    List<String> inputUnableMenuNames(String coachName);
 }

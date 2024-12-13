@@ -7,6 +7,8 @@ import static menu.model.category.Category.KOREAN_FOOD;
 import static menu.model.category.Category.WESTERN_FOOD;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 import menu.model.category.Category;
 
 public enum Menu {
@@ -74,11 +76,17 @@ public enum Menu {
         this.category = category;
     }
 
-    public static Menu from(final String name) {
+    public static Menu from(String name) {
         return Arrays.stream(values())
-                .filter(value -> value.name.equals(name))
+                .filter(menu -> menu.name.equals(name))
                 .findFirst()
                 .orElseThrow(MenuException::notFound);
+    }
+
+    public static List<Menu> fromCategory(Category category) {
+        return Arrays.stream(values())
+                .filter(value -> value.category == category)
+                .collect(Collectors.toList());
     }
 
     public String getName() {
