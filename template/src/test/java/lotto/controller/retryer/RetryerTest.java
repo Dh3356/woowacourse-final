@@ -2,7 +2,7 @@ package lotto.controller.retryer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import lotto.common.exception.CustomException;
+import lotto.exception.CustomException;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

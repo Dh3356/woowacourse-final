@@ -1,10 +1,10 @@
 package lotto.view.exception;
 
-import lotto.common.exception.CustomException;
+import lotto.exception.CustomException;
 
 public class InvalidInputException extends IllegalArgumentException implements CustomException {
 
-    private static final String MESSAGE = "message";
+    private static final String MESSAGE = "잘못된 입력입니다.";
 
     private InvalidInputException(final String message, final String... details) {
         super(CustomException.formatMessageWithDetails(message, details));

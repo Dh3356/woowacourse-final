@@ -1,7 +1,7 @@
 package lotto.controller.retryer;
 
 import java.util.function.Supplier;
-import lotto.common.exception.CustomException;
+import lotto.exception.CustomException;
 
 public final class Retryer {
 
